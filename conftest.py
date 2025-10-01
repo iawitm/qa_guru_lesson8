@@ -25,7 +25,7 @@ def product_from_csv():
 def default_cart(product_from_csv):
     default_cart_dict = {}
     for product in product_from_csv:
-        default_cart_dict[product] = product.quantity
+        default_cart_dict[product] = product.quantity - 1
 
     default_cart = Cart(default_cart_dict)
     return default_cart
